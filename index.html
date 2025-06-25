@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DSA Tracker Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2 class="logo">DSA Tracker</h2>
+      <nav>
+        <ul>
+          <li>🏠 Home</li>
+          <li>📚 Problems</li>
+          <li>📈 Progress Charts</li>
+          <li>🔥 Daily Streaks</li>
+          <li>🧪 Contests</li>
+          <li>🗂️ Tags</li>
+          <li>📝 Notes</li>
+          <li>⚙️ Settings</li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <header class="topbar">
+        <input type="text" placeholder="Search problems..." class="search" />
+        <div class="profile">
+            <span class="streak">🔥 45</span>
+            <img src="" alt="Profile" />
+    <button class="logout-btn" id="logoutBtn">Logout</button>
+        </div>
+        </header>
+
+
+      <!-- Dashboard Body -->
+<section class="dashboard">
+  <div class="cards-container">
+    <!-- Overview Card -->
+    <div class="card overview">
+    <h3>Welcome, <span id="username">User</span>! 👋</h3>
+      <p>Solved: <strong>312</strong> | Easy: <strong>140</strong> | Medium: <strong>125</strong> | Hard: <strong>47</strong></p>
+    </div>
+
+    <!-- Daily Practice Card -->
+    <div class="card daily-practice">
+      <h3>Today's Goal</h3>
+      <p>✅ 2/3 Problems Done</p>
+      <p>🔥 Streak: <strong>45 Days</strong></p>
+    </div>
+
+    <!-- Suggested Problems -->
+    <div class="card suggestions">
+      <h3>Suggested Problems</h3>
+      <ul>
+        <li>🔹 Three Sum – <span class="tag medium">Medium</span></li>
+        <li>🔹 Binary Tree Zigzag – <span class="tag medium">Medium</span></li>
+        <li>🔹 Reverse Pairs – <span class="tag hard">Hard</span></li>
+      </ul>
+    </div>
+
+    <!-- Heatmap -->
+    <div class="card heatmap">
+    <h3>Practice Heatmap</h3>
+    <div class="heatmap-grid" id="heatmap"></div>
+    <p style="font-size: 0.8rem; color: #aaa; margin-top: 0.5rem;">🟪 = More problems solved</p>
+    </div>
+
+
+    <!-- Graph -->
+<!-- Graph -->
+    <div class="card graph">
+    <h3>Progress Graph</h3>
+    <canvas id="progressChart" height="120"></canvas>
+    </div>
+
+  </div>
+</section>
+
+    </main>
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
