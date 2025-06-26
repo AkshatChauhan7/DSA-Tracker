@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daily Streaks | DSA Tracker</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      background: linear-gradient(to right, #0f0f1a, #1a1a2e);
+      color: #eaeaea;
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 1.5rem;
+    }
+
+    .streak-container {
+      max-width: 900px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .streak-card {
+      background: rgba(255, 255, 255, 0.04);
+      backdrop-filter: blur(10px);
+      border-radius: 14px;
+      padding: 1.25rem;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .streak-card:hover {
+      transform: translateY(-4px);
+    }
+
+    .streak-card h2 {
+      color: #a66cff;
+      margin-bottom: 0.75rem;
+      font-size: 1.4rem;
+    }
+
+    .streak-card p {
+      font-size: 1rem;
+    }
+
+    .quote {
+      font-style: italic;
+      font-size: 0.95rem;
+      color: #ccc;
+      text-align: center;
+    }
+
+    .back-btn {
+      display: inline-block;
+      margin: 1rem auto 0;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 8px;
+      background-color: #a66cff;
+      color: white;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.3s ease;
+      width: fit-content;
+    }
+
+    .back-btn:hover {
+      background-color: #915bf5;
+    }
+  </style>
+</head>
+<body>
+  <div class="streak-container">
+    <div class="streak-card">
+      <h2>🔥 Current Streak</h2>
+      <p><strong>45 Days</strong> of daily problem solving!</p>
+    </div>
+
+    <div class="streak-card">
+      <h2>🏆 Best Streak</h2>
+      <p><strong>67 Days</strong> — Your all-time best streak!</p>
+    </div>
+
+    <div class="streak-card">
+      <h2>💡 Motivation</h2>
+      <p class="quote">"Consistency beats intensity. One problem a day keeps the bugs away."</p>
+    </div>
+
+    <a href="index.html" class="back-btn">← Back to Dashboard</a>
+  </div>
+</body>
+</html>
